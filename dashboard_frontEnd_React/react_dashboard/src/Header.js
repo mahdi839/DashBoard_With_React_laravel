@@ -16,12 +16,13 @@ export default function Header() {
     <Navbar bg="dark" data-bs-theme="dark">
        
           <Container  >
-          <Navbar.Brand href="">P-Place</Navbar.Brand>
+          <Navbar.Brand href="/">P-Place</Navbar.Brand>
           <Nav className="me-auto navbar_wrapper">
           {
           localStorage.getItem('userData') ?
           <>
           <Nav.Item>
+          <Link to="/"> Product List</Link>
           <Link to="/add">Add Product</Link>
           </Nav.Item>
           <Nav.Item> <Link to="/update">Update Product</Link></Nav.Item>
